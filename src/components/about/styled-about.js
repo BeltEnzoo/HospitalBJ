@@ -1,88 +1,67 @@
 import styled from "styled-components";
 
-export const ConteinerAbout = styled.div`
-height: auto;
-text-align: center;
-display: flex;
-flex-direction: column;
-gap: 20px;
-justify-content: center;
-align-items:center;
-margin-top: 10px;
-
-`
-export const ConteinerDatos = styled.div`
-display: flex;
-flex-direction: column;
-border: 1px solid red;
-padding: 5px;
-`
-export const ConteinerImg = styled.div`
-  display: flex;
-  gap: 20px;
-  `;
-export const ImagenBienvenida = styled.img`
+export const AboutContainer = styled.section`
   width: 100%;
-  max-width: 550px;  /* Tamaño máximo */
-  height: auto;
-  `;
-
-export const TextDescription = styled.p`
-font-size: 20px;
-font-weight: 700;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
 `;
 
-export const TitleAbout = styled.h1`
-color: black;
-font-size: 40px;
-`
-export const Title2About = styled.h2`
-color: black;
-font-size: 25px;
-`
-export const CityAbout = styled.p`
-color: black;
-font-size: 25px;
-`
-export const ListContainer = styled.div`
+export const ContentWrapper = styled.div`
+  max-width: 1200px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  text-align: center;
-  margin-top: 50px;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
-export const ListItem = styled.div`
+export const TextSection = styled.div`
+  flex: 1;
+`;
+
+export const Title = styled.h1`
+  font-size: 2.5rem;
+  color: #e61c1c;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+`;
+
+export const Subtitle = styled.h2`
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+export const Location = styled.p`
+  font-size: 1.2rem;
+  color: #555;
+`;
+
+export const ImageContainer = styled.div`
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 150px;
-  padding: 0px;
-  width: 100%;
-  background-color: #f9f9f9;
-  gap: 10px;
+  justify-content: center;
 `;
 
 export const Image = styled.img`
-  width: 70px;
-  height: 70px;
-  border-radius: 0%;
-`;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Title = styled.h3`
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-`;
-
-export const PhoneNumber = styled.p`
-  margin: 5px 0 0;
-  font-size: 16px;
-  color: #555;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;

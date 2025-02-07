@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListContainer, ListItem, Image, Info, Title, PhoneNumber } from './styled-about'
+import { ListContainer, ListItem, Image, Info, Title, PhoneNumber } from './styled-comunication'
 import {data} from '../../data/data'
 const Comunication = () => {
   return (
