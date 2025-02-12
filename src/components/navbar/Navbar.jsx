@@ -21,6 +21,7 @@ const Navbar = () => {
         <Link to="/servicios">Servicios</Link>
         <Link to="/contacto">Contacto</Link>
         <Link to="/historia">Historia</Link>
+        <Link to="/mision-vision">Misión / Visión</Link>
       </Nav>
       <HamburgerMenu onClick={toggleMenu}>
         <MenuIcon className={menuOpen ? "open" : ""}></MenuIcon>
