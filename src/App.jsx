@@ -1,24 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home";
-import Servicios from "./pages/Servicios";
-import Contacto from "./pages/Contacto";
-import Historia from "./pages/Historia";
-import MisionVision from "./pages/MisionVision"; // Importar la nueva página
 
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NewsDetail from './pages/NewsDetail'; // Página de detalle de la noticia
+
+const App = () => {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/servicios" element={<Servicios />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/historia" element={<Historia />} />
-        <Route path="/mision-vision" element={<MisionVision />} /> {/* Nueva ruta */}
+        <Route path="/news/:id" element={<NewsDetail />} /> {/* Ruta para la noticia completa */}
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
