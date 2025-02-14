@@ -13,7 +13,7 @@ import LastNews from "../components/lastNews/LastNews"; // Importamos el compone
 const Home = () => {
   return (
     <>
-      <Navbar /> {/* Asegúrate de que el Navbar esté aquí */}
+      {/* <Navbar /> Asegúrate de que el Navbar esté aquí */}
       <About />
       <Comunication />
       <hr />

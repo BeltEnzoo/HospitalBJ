@@ -14,17 +14,18 @@ export const newsData = [
       content: "Detalles sobre la capacitación realizada en el hospital..."
     },
     {
-      id: 2,
+      id: 3,
       title: "Encuesta de personal",
       image: "https://tse3.mm.bing.net/th?id=OIP.zcMYz9Iaa8ZZ1DqNj8eZ0gHaEG&pid=Api&P=0&h=180",
       description: "El personal del hospital recibió formación en atención de emergencias.",
       content: "Detalles sobre la capacitación realizada en el hospital..."
     },
     {
-      id: 2,
+      id: 4,
       title: "Nuevos profesionales",
       image: "https://tse1.mm.bing.net/th?id=OIP.ztccLzptftK8AQ-0CFNwbwHaEU&pid=Api&P=0&h=180",
       description: "El personal del hospital recibió formación en atención de emergencias.",
       content: "Detalles sobre la capacitación realizada en el hospital..."
     },
+
   ];

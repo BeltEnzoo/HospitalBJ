@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, Image, Info } from './NewsCardStyles';
+import { Card, Image, Info, StyledLink } from './newsCardStyles';
 
 const NewsCard = ({ news }) => {
   return (
-    <Link to={`/news/${news.id}`}>
+    <StyledLink to={`/news/${news.id}`}>
       <Card>
         <Image src={news.image} alt={news.title} />
         <Info>
@@ -12,7 +12,7 @@ const NewsCard = ({ news }) => {
           <p>{news.description}</p>
         </Info>
       </Card>
-    </Link>
+    </StyledLink>
   );
 };
 

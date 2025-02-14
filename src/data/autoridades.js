@@ -7,7 +7,7 @@ export const autoridades = [
       },
     {
       id: 2,
-      cargo: "DIR. MEDICA",
+      cargo: "DIR. MED",
       nombre: "Dr. Juan Pérez",
       icono: "🏥", // Aquí puedes reemplazarlo con una imagen
     },
@@ -35,5 +35,6 @@ export const autoridades = [
       nombre: "Sr. Roberto Sánchez",
       icono: "🏛️",
     },
+    
   ];
   

@@ -1,5 +1,10 @@
 // components/newsCard/NewsCardStyles.js
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
 
 export const Card = styled.div`
   display: flex;
@@ -12,7 +17,7 @@ export const Card = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 300px;
   width: 100%;
-  
+ 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -27,15 +32,18 @@ export const Image = styled.img`
 
 export const Info = styled.div`
   padding: 1rem;
-  text-align: center;
+  text-align: center;  
 
   h3 {
     font-size: 1.25rem;
     color: #333;
+    text-transform: uppercase;
   }
 
   p {
     color: #666;
     font-size: 1rem;
+    text-decoration: none;
+  
   }
 `;

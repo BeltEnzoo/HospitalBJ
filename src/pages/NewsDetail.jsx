@@ -12,8 +12,8 @@ const NewsDetail = () => {
   return (
     <div>
       <h1>{news.title}</h1>
-      <img src={news.image} alt={news.title} style={{ width: '100%', height: 'auto' }} />
-      <p>{news.content}</p> {/* Aquí mostramos el contenido completo */}
+      <img src={news.image} alt={news.title} style={{ width: '250px', height: '250px' }} />
+      <p>{news.contentexpor ? news.contentexpor : 'Contenido no disponible.'}</p>
     </div>
   );
 };

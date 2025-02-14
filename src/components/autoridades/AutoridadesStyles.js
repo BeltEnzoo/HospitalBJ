@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const AutoridadesContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: auto;
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    gap: 10px; /* Reduce el espacio entre tarjetas en pantallas más pequeñas */
+  }
 `;
 
 export const Tarjeta = styled.div`
@@ -47,5 +51,15 @@ export const Tarjeta = styled.div`
     .nombre {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 120px; /* Ajusta el tamaño de las tarjetas en pantallas más pequeñas */
+  }
+
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 100px; /* Ajusta aún más el tamaño de las tarjetas en pantallas muy pequeñas */
   }
 `;
