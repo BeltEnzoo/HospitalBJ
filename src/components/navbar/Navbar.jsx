@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import { HeaderWrapper, Nav, Logo, HamburgerMenu, MenuIcon } from "./navbar-styled";
 import { Link } from "react-router-dom";
+import ImgLogo from "../navbar/Logos/logo2.jpeg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(prevState => !prevState); // Mantén el estado correcto para mostrar/ocultar el menú
   };
 
   return (
     <HeaderWrapper>
-      <Logo>
-        <h1>
-          Hospital <span>Eva Perón</span>
-        </h1>
-      </Logo>
+      <Logo src={ImgLogo} alt="Logo del hospital" />
+      
+      {/* Enlaces de navegación */}
       <Nav className={menuOpen ? "open" : ""}>
         <Link to="/">Inicio</Link>
         <Link to="/servicios">Servicios</Link>
@@ -23,6 +22,8 @@ const Navbar = () => {
         <Link to="/historia">Historia</Link>
         <Link to="/mision-vision">Misión / Visión</Link>
       </Nav>
+
+      {/* Menú hamburguesa */}
       <HamburgerMenu onClick={toggleMenu}>
         <MenuIcon className={menuOpen ? "open" : ""}></MenuIcon>
       </HamburgerMenu>

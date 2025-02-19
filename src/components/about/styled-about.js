@@ -2,87 +2,92 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
   width: auto;
+  height: 500px;
   padding: 50px 20px;
   display: flex;
   justify-content: center;
   background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
 `;
 
 export const ContentWrapper = styled.div`
   max-width: 1200px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté por encima de las imágenes */
 
   @media (max-width: 1024px) {
-    gap: 30px;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px; /* Reduce gap on small screens */
+    gap: 25px;
   }
 `;
 
 export const TextSection = styled.div`
-  flex: 1;
+  text-align: center;
+  z-index: 2; /* Asegura que el texto esté por encima */
 `;
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
-  color: #e61c1c;
+  font-size: 2.8rem;
+  color: #fff; /* Color blanco para contrastar con el fondo */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar visibilidad */
 
   @media (max-width: 1024px) {
-    font-size: 2.2rem; /* Slightly smaller font for tablet-sized screens */
+    font-size: 2.5rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 `;
 
 export const Subtitle = styled.h2`
   font-size: 1.8rem;
   font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    font-size: 1.6rem; /* Adjust size for smaller screens */
+    font-size: 1.6rem;
   }
 `;
 
 export const Location = styled.p`
   font-size: 1.2rem;
-  color: #555;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    font-size: 1rem; /* Adjust font size for mobile */
+    font-size: 1rem;
   }
 `;
 
 export const ImageContainer = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-`;
-
-export const Image = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-image: url(${(props) => props.image});
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%); /* Oscurecer un poco la imagen para que el texto sea más legible */
+  z-index: 1;
+  transition: background-image 1s ease-in-out;
 
-  @media (max-width: 1024px) {
-    max-width: 90%; /* Slightly adjust max width on tablets */
-  }
-
-  @media (max-width: 768px) {
-    max-width: 100%;
+  /* Efecto de parallax si decides hacer que cambien las imágenes */
+  &:hover {
+    filter: brightness(60%);
   }
 `;
+

@@ -6,8 +6,9 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #e61c1c;
+  border-bottom: 2px solid #007bb5; /* Cambié el rojo por un azul institucional */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 
   @media (max-width: 768px) {
     padding: 1rem;
@@ -17,46 +18,38 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const Logo = styled.div`
-  h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.8rem;
-    color: black;
-    margin: 0;
-    span {
-      color: #e61c1c;
-    }
-  }
+export const Logo = styled.img`
+  height: 70px; /* Ajusta el tamaño según necesites */
+  width: auto; /* Mantiene la proporción */
+  cursor: pointer;
 
   @media (max-width: 768px) {
-    h1 {
-      font-size: 1.5rem;
-      padding-left: 35px;
-
-    }
+    height: 50px; /* Reduce el tamaño en pantallas pequeñas */
   }
 `;
 
 export const Nav = styled.nav`
-  background-color: #e61c1c;
+  background-color: #007bb5; /* Azul institucional */
   padding: 12px 20px;
   border-radius: 5px;
   display: flex;
   gap: 30px;
   transition: all 0.3s ease;
-  
+  font-family: 'Roboto', sans-serif; /* Cambié la fuente a Roboto */
+
   a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600; /* Peso de fuente más sutil */
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
   }
 
   a:hover {
-    color: #f0f0f0;
-    text-decoration: underline;
+    color: #f0f0f0; /* Color más suave al pasar el mouse */
+    text-decoration: underline; /* Agregar subrayado */
+    text-decoration-color: #f0f0f0; /* Subrayado del color del texto */
   }
 
   @media (max-width: 768px) {
@@ -65,9 +58,11 @@ export const Nav = styled.nav`
     gap: 15px;
     padding: 10px;
     width: 100%;
-    
+    text-align: center;
+    transition: 0.3s ease;
+
     &.open {
-      display: flex;
+      display: flex; /* Mostrar el menú cuando está abierto */
     }
   }
 `;
@@ -76,7 +71,7 @@ export const HamburgerMenu = styled.div`
   display: none;
   cursor: pointer;
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 20px; /* Asegurando que esté alineado con el logo */
   
   @media (max-width: 768px) {
@@ -87,33 +82,31 @@ export const HamburgerMenu = styled.div`
 export const MenuIcon = styled.div`
   width: 30px;
   height: 3px;
-  background-color: #e61c1c;
+  background-color: #007bb5; /* Cambié el color del icono a azul institucional */
   margin: 6px 0;
   transition: 0.3s;
   position: relative;
 
-  /* Las líneas del icono */
   &::before, &::after {
     content: "";
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #e61c1c;
+    background-color: #007bb5; /* Cambié el color del icono a azul institucional */
     transition: 0.3s;
   }
 
   &::before {
-    top: -10px; /* Línea superior */
+    top: -10px;
   }
 
   &::after {
-    top: 10px; /* Línea inferior */
+    top: 10px;
   }
 
   &.open {
     background-color: transparent;
 
-    /* Girar las líneas para mostrar el "X" */
     &::before {
       transform: rotate(45deg);
       top: 0;
@@ -125,4 +118,3 @@ export const MenuIcon = styled.div`
     }
   }
 `;
-

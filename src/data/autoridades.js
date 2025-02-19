@@ -2,37 +2,37 @@ export const autoridades = [
     {
         id: 1,
         cargo: "DIR- ADMR",
-        nombre: "Dr. Juan Pérez",
+        nombre: "Matias Iribecampos",
         icono: "🏥", // Aquí puedes reemplazarlo con una imagen
       },
     {
       id: 2,
       cargo: "DIR. MED",
-      nombre: "Dr. Juan Pérez",
+      nombre: "Dr. Juan Carlos Scomburdi",
       icono: "🏥", // Aquí puedes reemplazarlo con una imagen
     },
     {
       id: 3,
       cargo: "RRHH",
-      nombre: "Lic. María González",
+      nombre: "Cecilia Vidaguren",
       icono: "👥",
     },
     {
       id: 4,
       cargo: "COMPRAS",
-      nombre: "Sr. Carlos López",
+      nombre: "Cont. Jose Cluigt",
       icono: "💲",
     },
     {
       id: 5,
       cargo: "CONTABLE",
-      nombre: "C.P. Laura Martínez",
+      nombre: "Jorge",
       icono: "📉",
     },
     {
       id: 6,
       cargo: "TESORERÍA",
-      nombre: "Sr. Roberto Sánchez",
+      nombre: "Agustina Zelayeta",
       icono: "🏛️",
     },
     

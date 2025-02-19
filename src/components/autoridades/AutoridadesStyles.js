@@ -3,63 +3,73 @@ import styled from "styled-components";
 export const AutoridadesContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: auto;
-  gap: 20px;
-  padding: 20px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  width: auto;
+  max-width: 1200px;
+  margin: auto;
 
   @media (max-width: 768px) {
-    gap: 10px; /* Reduce el espacio entre tarjetas en pantallas más pequeñas */
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 480px) {
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
 export const Tarjeta = styled.div`
-  background: #222;
-  color: white;
-  width: 150px;
-  height: 150px;
+  background:rgb(185, 181, 181);
+  color: #333;
+  width: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   cursor: pointer;
+  padding: 20px;
+  text-align: center;
 
   .icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #e61c1c;
   }
 
   .cargo {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
   }
 
   .nombre {
-    position: absolute;
-    bottom: 10px;
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.3s;
+    font-size: 1rem;
+    color: #777;
   }
 
   &:hover {
-    background: #e61c1c;
-
-    .nombre {
-      opacity: 1;
-    }
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: white;
   }
 
   @media (max-width: 768px) {
-    width: 120px;
-    height: 120px; /* Ajusta el tamaño de las tarjetas en pantallas más pequeñas */
+    width: 160px;
+    height: 200px;
   }
 
   @media (max-width: 480px) {
-    width: 100px;
-    height: 100px; /* Ajusta aún más el tamaño de las tarjetas en pantallas muy pequeñas */
+    width: 130px;
+    height: 180px;
   }
 `;

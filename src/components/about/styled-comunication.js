@@ -15,7 +15,7 @@ export const ListItem = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  padding: 0px;
+  padding: 10px;
   width: 100%;
   background-color: #f9f9f9;
   gap: 10px;
