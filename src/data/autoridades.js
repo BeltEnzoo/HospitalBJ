@@ -26,7 +26,7 @@ export const autoridades = [
     {
       id: 5,
       cargo: "CONTABLE",
-      nombre: "Jorge",
+      nombre: "Jorge Muñiz",
       icono: "📉",
     },
     {

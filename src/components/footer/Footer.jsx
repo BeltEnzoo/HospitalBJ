@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
           <FooterContent>
-            <p>&copy; 2025 Mi Sitio Web</p>
+            <p>&copy; 2025 Hospital Eva Peron</p>
             <FooterLinks>
               <FooterLink href="/about">Acerca de</FooterLink>
               <FooterLink href="/contact">Contacto</FooterLink>
@@ -15,16 +15,16 @@ const Footer = () => {
             </FooterLinks>
     
             <SocialLinks>
-              <SocialIcon href="https://www.instagram.com" target="_blank">
+              <SocialIcon href="https://www.instagram.com/hospitalevaperonbj" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
               </SocialIcon>
-              <SocialIcon href="https://www.facebook.com" target="_blank">
+              <SocialIcon href="https://www.facebook.com/hospitalevaperonbj" target="_blank">
                 <FontAwesomeIcon icon={faFacebookF} />
               </SocialIcon>
-              <SocialIcon href="https://wa.me/" target="_blank">
+              <SocialIcon href="https://wa.me/542281369943" target="_blank">
                 <FontAwesomeIcon icon={faWhatsapp} />
               </SocialIcon>
-              <SocialIcon href="https://www.linkedin.com" target="_blank">
+              <SocialIcon href="https://www.linkedin.com/company/hospital-eva-per%C3%B3n---ente-descentralizado-dr.-a.-saintout-/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </SocialIcon>
             </SocialLinks>

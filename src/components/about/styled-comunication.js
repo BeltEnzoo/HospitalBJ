@@ -33,7 +33,7 @@ export const ListItem = styled.div`
 export const Image = styled.img`
   width: 70px;
   height: 70px;
-  border-radius: 0%;
+  border-radius: 50%;
   object-fit: cover; /* Asegura que la imagen se recorte bien en el contenedor */
 `;
 

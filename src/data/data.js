@@ -1,7 +1,7 @@
 export const data = [
     {
       id: 1,
-      imagen: '/img/atencion_telefonica.png',
+      imagen: '/img/atencion_telefonica.jpg',
       descripcion: 'Atencion telefonica',
       cel: '+1 234 567 890',
     },
@@ -13,7 +13,7 @@ export const data = [
     },
     {
       id: 3,
-      imagen: '/img/consulta_tel.png',
+      imagen: '/img/consulta_tel.jpg',
       descripcion: 'Consultas',
       cel: '+1 555 123 456',
     },

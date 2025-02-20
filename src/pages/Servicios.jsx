@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ServiciosContainer, ServicioCard, Descripcion } from "./ServiciosStyles";
+import { ServiciosContainer, Title, ServicioCard, Image, Descripcion } from "./ServiciosStyles";
 import { servicios } from "../data/servicios.js";
 
 const Servicios = () => {
@@ -11,14 +11,18 @@ const Servicios = () => {
 
   return (
     <ServiciosContainer>
-      <h1>Nuestros Servicios</h1>
-      {servicios.map((servicio) => (
-        <ServicioCard key={servicio.id} onClick={() => toggleDescripcion(servicio.id)}>
-          <h2>{servicio.nombre}</h2>
-          {servicioActivo === servicio.id && <Descripcion>{servicio.descripcion}</Descripcion>}
-        </ServicioCard>
-      ))}
+      <Title>Nuestros Servicios</Title>
+      <div className="services-grid">
+        {servicios.map((servicio) => (
+          <ServicioCard key={servicio.id} onClick={() => toggleDescripcion(servicio.id)}>
+            <Image src={servicio.imagen} alt={servicio.nombre} />
+            <h2>{servicio.nombre}</h2>
+            {servicioActivo === servicio.id && <Descripcion>{servicio.descripcion}</Descripcion>}
+          </ServicioCard>
+        ))}
+      </div>
     </ServiciosContainer>
+
   );
 };
 

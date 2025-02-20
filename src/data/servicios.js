@@ -1,10 +1,59 @@
+// data/servicios.js
 export const servicios = [
-    { id: 1, nombre: "Quirófano", descripcion: "Nuestro quirófano está equipado con tecnología de última generación para procedimientos seguros y eficientes." },
-    { id: 2, nombre: "Laboratorio", descripcion: "Realizamos análisis clínicos precisos con resultados rápidos y confiables." },
-    { id: 3, nombre: "Hemoterapia", descripcion: "Ofrecemos servicios de transfusión sanguínea con estrictos controles de calidad." },
-    { id: 4, nombre: "Unidad de Terapia Intensiva", descripcion: "Atención especializada para pacientes críticos con monitoreo constante." },
-    { id: 5, nombre: "Internación General", descripcion: "Comodidad y atención médica continua para nuestros pacientes hospitalizados." },
-    { id: 6, nombre: "Ambulancias Alta Complejidad", descripcion: "Unidades móviles totalmente equipadas para traslados de emergencia." },
-    { id: 7, nombre: "Maternidad", descripcion: "Acompañamos a las futuras madres con atención integral y personalizada." },
-  ];
-  
+  {
+    id: 1,
+    nombre: "Quirófano",
+    descripcion: "Servicio de quirófano para procedimientos quirúrgicos.",
+    imagen: "https://www.operarme.es/thumb/834x0/storage/media/noticias/imagenes-medicas/quirofano.jpg"
+  },
+  {
+    id: 2,
+    nombre: "Laboratorio",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelXKlGz4_-ECGrQPoUeXZXwgqEVTzHpJe2g&s"
+  },
+  {
+    id: 3,
+    nombre: "Terapia Intensiva",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2rEk8J-cMNEVkxYGHD31AmjUoPQyOc2ek0w&s"
+  },
+  {
+    id: 4,
+    nombre: "Maternidad",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_X6KBI5z6YQlNhxlTkJFrqHTkb0GHL7Ifg&s"
+  },
+  {
+    id: 5,
+    nombre: "Consultorios",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://media.istockphoto.com/id/1364075546/es/foto/pasillo-vac%C3%ADo-en-el-hospital-moderno-con-mostrador-de-informaci%C3%B3n-y-cama-de-hospital-en-las.jpg?s=612x612&w=0&k=20&c=etsqAKICzWoL521_ACpmy-6-TIw4cdj8EZqoqYnD5mc="
+  },
+  {
+    id: 6,
+    nombre: "Internacion general",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdqOylFnKZSwmOICKv8QUZClavNeBLejLHtQ&s"
+  },
+  {
+    id: 7,
+    nombre: "Hemoterapia",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0L3uzX_j3zURFvlFfBnmEP7OUZWiPTWPm6w&s"
+  },
+  {
+    id: 8,
+    nombre: "Farmacia",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_FIZ1jcfzswsXpLh_ZqR2x9Xcc26413aHw&s"
+  },
+  {
+    id: 9,
+    nombre: "Guardia Medica",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://www.cadenanueve.com/wp-content/uploads/2023/02/GM.jpg"
+  },
+
+  // Agrega más servicios aquí...
+];
