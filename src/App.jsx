@@ -8,6 +8,7 @@ import Servicios from './pages/Servicios';
 import Historia from './pages/Historia';
 import MisionVision from './pages/MisionVision';
 import Navbar from './components/navbar/Navbar';
+import CAPS from './pages/CAPS'
 
 
 const App = () => {
@@ -21,7 +22,8 @@ const App = () => {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/historia" element={<Historia />} />
-        <Route path="/mision-vision" element={<MisionVision />} />      
+        <Route path="/mision-vision" element={<MisionVision />} />
+        <Route path="/caps" element={<CAPS />} />      
       </Routes>
     </Router>
   );

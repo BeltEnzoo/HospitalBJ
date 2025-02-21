@@ -21,6 +21,7 @@ const Navbar = () => {
         <Link to="/contacto">Contacto</Link>
         <Link to="/historia">Historia</Link>
         <Link to="/mision-vision">Misión / Visión</Link>
+        <Link to="/caps">CAPS</Link>
       </Nav>
 
       {/* Menú hamburguesa */}
