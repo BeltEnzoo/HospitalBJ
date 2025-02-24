@@ -8,7 +8,7 @@ export const AutoridadesContainer = styled.div`
   gap: 20px;
   padding: 40px;
   width: auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
 
   @media (max-width: 768px) {

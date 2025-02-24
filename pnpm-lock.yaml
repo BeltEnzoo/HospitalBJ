@@ -41,6 +41,9 @@ importers:
       styled-components:
         specifier: ^6.1.13
         version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      styled-normalize:
+        specifier: ^8.1.1
+        version: 8.1.1(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
     devDependencies:
       '@eslint/js':
         specifier: ^9.15.0
@@ -1432,6 +1435,11 @@ packages:
     peerDependencies:
       react: '>= 16.8.0'
       react-dom: '>= 16.8.0'
+
+  styled-normalize@8.1.1:
+    resolution: {integrity: sha512-Nd6iLDjKuxotRHSewe+qFqvw33WxIotbjZ3YkC8802manACBchUIb7vJt/C8ylDrO5850HmlnQTApwJLuN9sug==}
+    peerDependencies:
+      styled-components: ^4.0.0 || ^5.0.0 || ^6.0.0
 
   stylis@4.3.2:
     resolution: {integrity: sha512-bhtUjWd/z6ltJiQwg0dUfxEJ+W+jdqQd8TbWLWyeIJHlnsqmGLRFFd8e5mA0AZi/zx90smXRlN66YMTcaSFifg==}
@@ -3035,6 +3043,10 @@ snapshots:
       shallowequal: 1.1.0
       stylis: 4.3.2
       tslib: 2.6.2
+
+  styled-normalize@8.1.1(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+    dependencies:
+      styled-components: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   stylis@4.3.2: {}
 

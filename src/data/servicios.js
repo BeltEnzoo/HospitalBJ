@@ -50,9 +50,15 @@ export const servicios = [
   },
   {
     id: 9,
-    nombre: "Guardia Medica",
+    nombre: "Guardia medica",
     descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
     imagen: "https://www.cadenanueve.com/wp-content/uploads/2023/02/GM.jpg"
+  },
+  {
+    id: 10,
+    nombre: "Unidad oncologica",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5b97bpxnfJYaYUJzKqz8ZXO6K1-Qd9eGOg&s"
   },
 
   // Agrega más servicios aquí...
