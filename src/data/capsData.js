@@ -11,7 +11,7 @@ export const capsData = [
       lunes: { profesional: "Dra. Caram Ana", horario: "08:00 - 12:00", especialidad: "Clinica" },
       martes: {profesional: "Dra. Volkaven Sara - Dra. Caram Ana - Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Obstetra - Clinica - Psicologia"},
       miercoles: { profesional: "Dra. Caram Ana - Cernutto Martina", horario: "08:00 - 12:00", especialidad: "Clinica - Psicopedagia" },
-      jueves: { profesional: "Dr. Laplace Gonzalo", horario: "08:00 - 12:00", especialidad: "Pediatria" },
+      jueves: { profesional: "Dr. Laplace Gonzalo", horario: "08:00 - 12:00", especialidad: "Pediatra" },
       viernes: { profesional: "Enf. Vila Silvina", horario: "08:00 - 12:00", especialidad: "Enfermeria" }
     }
   },
