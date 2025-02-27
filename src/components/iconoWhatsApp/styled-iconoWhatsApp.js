@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 export const FloatingButton = styled.a`
   position: fixed;
   bottom: 20px;
@@ -16,6 +14,7 @@ export const FloatingButton = styled.a`
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
+  z-index: 9999;  // Asegura que esté por encima de otros elementos
 
   &:hover {
     transform: scale(1.1);

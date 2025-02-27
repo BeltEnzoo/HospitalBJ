@@ -21,6 +21,13 @@ export const AutoridadesContainer = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 `;
+export const ImagenAutoridad = styled.img`
+  width: 80px;  // Ajusta el tamaño de la imagen según necesidad
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+`;
 
 export const Tarjeta = styled.div`
   background:rgb(185, 181, 181);

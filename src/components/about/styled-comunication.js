@@ -8,6 +8,15 @@ export const ListContainer = styled.div`
   padding: 0px;
   text-align: center; 
   justify-content: space-around; /* Centra los elementos en pantallas pequeñas */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    width: auto;
+  }
+
+  @media (max-width: 768px) {
+    margin: 10px 20px;
+  }
+
 `;
 
 export const ListItem = styled.div`
