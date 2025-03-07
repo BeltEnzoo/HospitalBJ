@@ -13,24 +13,30 @@ export const autoridades = [
   },
   {
     id: 3,
+    cargo: "SUB DIR. MED",
+    nombre: "Lic. Sandra Penido",
+    imagen: "",
+  },
+  {
+    id: 4,
     cargo: "RRHH",
     nombre: "Cecilia Vidaguren",
     imagen: "public/img/Cecilia vidaguren.jpg",
   },
   {
-    id: 4,
+    id: 5,
     cargo: "COMPRAS",
     nombre: "Cont. Jose Cluigt",
     imagen: "public/img/JoseCluig.jpg",
   },
   {
-    id: 5,
+    id: 6,
     cargo: "CONTABLE",
     nombre: "Jorge Muñiz",
     imagen: "public/img/JorgeContador.jpg",
   },
   {
-    id: 6,
+    id: 7,
     cargo: "TESORERÍA",
     nombre: "Agustina Zelayeta",
     imagen: "public/img/AgusZ.jpg",

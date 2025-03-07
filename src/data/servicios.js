@@ -60,6 +60,19 @@ export const servicios = [
     descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5b97bpxnfJYaYUJzKqz8ZXO6K1-Qd9eGOg&s"
   },
+  {
+    id: 11,
+    nombre: "Imagenes medicas",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://d100mj7v0l85u5.cloudfront.net/s3fs-public/Novedosa-plataforma-de-diagnostico-de-imagenes-medicas-basada-en-IA-G.jpg"
+  },
+  {
+    id: 11,
+    nombre: "Pediatria",
+    descripcion: "Análisis y pruebas de laboratorio para diagnóstico.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMfIVomEMyAcbEVVGStLVtXL5iKB3jpWeHw&s"
+  }
+  
 
   // Agrega más servicios aquí...
 ];

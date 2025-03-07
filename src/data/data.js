@@ -3,7 +3,7 @@ export const data = [
       id: 1,
       imagen: '/img/atencion_telefonica.jpg',
       descripcion: 'Atencion telefonica',
-      cel: '+1 234 567 890',
+      cel: '2292-4513',
     },
     {
       id: 2,
@@ -13,9 +13,9 @@ export const data = [
     },
     {
       id: 3,
-      imagen: '/img/consulta_tel.jpg',
-      descripcion: 'Consultas',
-      cel: '+1 555 123 456',
+      imagen: '/img/103.png',
+      descripcion: 'Emergencias',
+      cel: '103',
     },
 
   ];

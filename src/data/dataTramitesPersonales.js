@@ -18,7 +18,16 @@ export const dataTramitesPersonales = [
         imagen: '/img/vacunacion.png',
         descripcion: 'Calendario vacunatorio',
         cel: '+1 555 123 456',
-        link:''
+        link:'',
+        calendarImages: [
+            '/img/vacuna/Split-1.png',
+            '/img/vacuna/Split-2.png',
+            '/img/vacuna/Split-3.png',
+            '/img/vacuna/Split-4.png',
+            '/img/vacuna/Split-5.png',
+            '/img/vacuna/Split-6.png',
+            '/img/vacuna/Split-7.png',
+            // Agrega más imágenes si es necesario
+        ]
     },
-
 ];

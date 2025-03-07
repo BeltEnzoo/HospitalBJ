@@ -17,30 +17,25 @@ const CAPS = () => {
       {/* 🔎 Input de búsqueda */}
       <Input 
         type="text" 
-        placeholder="Buscar por profesional, especialidad o CAPS..." 
+        placeholder="Buscar por profesional o especialidad..." 
         value={searchTerm} 
         onChange={handleSearch} 
       />
 
       {capsData.map((caps) => {
-        const profesionalesUnicos = new Map();
-
-        Object.values(caps.calendario).forEach(({ profesional, especialidad }) => {
-          if (profesional && especialidad) {
-            profesionalesUnicos.set(profesional, especialidad);
-          }
-        });
-
-        // Filtrar según la búsqueda
-        const filteredProfessionals = [...profesionalesUnicos].filter(
-          ([profesional, especialidad]) =>
-            profesional.toLowerCase().includes(searchTerm) ||
-            especialidad.toLowerCase().includes(searchTerm) ||
-            caps.nombre.toLowerCase().includes(searchTerm)
+        // Filtrar el CAPS según la búsqueda
+        const matchingProfesionales = caps.profesionales.filter(({ nombre, especialidad }) => 
+          nombre.toLowerCase().includes(searchTerm) || especialidad.toLowerCase().includes(searchTerm)
         );
-
-        // Si no hay coincidencias, no muestra el CAPS
-        if (filteredProfessionals.length === 0) return null;
+        
+        if (
+          !caps.nombre.toLowerCase().includes(searchTerm) &&
+          !caps.ubicacion.toLowerCase().includes(searchTerm) &&
+          !caps.direccion.toLowerCase().includes(searchTerm) &&
+          matchingProfesionales.length === 0 // Si no hay profesionales que coincidan con la búsqueda
+        ) {
+          return null;
+        }
 
         return (
           <div key={caps.id}>
@@ -49,22 +44,26 @@ const CAPS = () => {
             <p><strong>Dirección:</strong> {caps.direccion}</p>
             <p><strong>Enfermera:</strong> {caps.enfermera}</p>
             <p><strong>Celular:</strong> {caps.celular}</p>          
-            <Table>
-              <thead>
-                <tr>
-                  <Th>Profesional</Th>
-                  <Th>Especialidad</Th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredProfessionals.map(([profesional, especialidad]) => (
-                  <tr key={profesional}>
-                    <Td>{profesional}</Td>
-                    <Td>{especialidad}</Td>
+
+            {/* Mostrar la tabla de profesionales solo si hay algún profesional que coincida */}
+            {matchingProfesionales.length > 0 && (
+              <Table>
+                <thead>
+                  <tr>
+                    <Th>Profesional</Th>
+                    <Th>Especialidad</Th>
                   </tr>
-                ))}
-              </tbody>
-            </Table>
+                </thead>
+                <tbody>
+                  {matchingProfesionales.map(({ nombre, especialidad }) => (
+                    <tr key={nombre}>
+                      <Td>{nombre}</Td>
+                      <Td>{especialidad}</Td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            )}
           </div>
         );
       })}

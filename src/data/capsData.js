@@ -6,14 +6,14 @@ export const capsData = [
     ubicacion: "Barrio Parque Muñoz",
     direccion: "Muñoz 225",
     enfermera: "Silvina Vila",
-    celular:"453959",
-    calendario: {
-      lunes: { profesional: "Dra. Caram Ana", horario: "08:00 - 12:00", especialidad: "Clinica" },
-      martes: {profesional: "Dra. Volkaven Sara - Dra. Caram Ana - Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Obstetra - Clinica - Psicologia"},
-      miercoles: { profesional: "Dra. Caram Ana - Cernutto Martina", horario: "08:00 - 12:00", especialidad: "Clinica - Psicopedagia" },
-      jueves: { profesional: "Dr. Laplace Gonzalo", horario: "08:00 - 12:00", especialidad: "Pediatra" },
-      viernes: { profesional: "Enf. Vila Silvina", horario: "08:00 - 12:00", especialidad: "Enfermeria" }
-    }
+    celular: "453959",
+    profesionales: [
+      { nombre: "Dra. Caram Ana", especialidad: "Clinica" },
+      { nombre: "Volkaven Sara", especialidad: "Obstetricia" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+      { nombre: "Dra. Cernutto Martina", especialidad: "Psicopedagia" },
+      { nombre: "Dr. Laplace Gonzalo", especialidad: "Pediatra" },
+    ]
   },
   {
     id: 2,
@@ -21,14 +21,15 @@ export const capsData = [
     ubicacion: "Barrio Molino",
     direccion: "Av. Taglioretti 746",
     enfermera: "Gema Aranibar",
-    celular:"2281 - 566600",
-    calendario: {
-      lunes: { profesional: "Dr. Dicroce Fernando - Johnston Maria", horario: "08:00 - 12:00", especialidad: "Clinico - Nutricionista" },
-      martes: {profesional: "Dr. Dicroce Fernando - Gomez Josefina", horario: "08:00 - 12:00", especialidad: "Clinico - Psicologia"},
-      miercoles: { profesional: "Dr. Dicroce Fernando - Murua Paula - Bellingeri Mariana", horario: "08:00 - 12:00", especialidad: "Clinico - Pediatria - Estimulacion temprana" },
-      jueves: { profesional: "Dr. Dicroce Fernando - Gomez Josefina", horario: "08:00 - 12:00", especialidad: "Clinico - Psicologia" },
-      viernes: { profesional: "Dr. Dicroce Fernando - Gomez Josefina - Kruger y Percaz", horario: "08:00 - 12:00", especialidad: "Clinico - Psicologia - Obstetricia" }
-    }
+    celular: "2281 - 566600",
+    profesionales: [
+      { nombre: "Dr. Dicroce Fernando", especialidad: "Clinico" },
+      { nombre: "Lic. Johnston Maria", especialidad: "Nutricionista" },
+      { nombre: "Gomez Josefina", especialidad: "Psicologia" },
+      { nombre: "Dra. Murua Paula", especialidad: "Pediatria" },
+      { nombre: "Bellingeri Mariana", especialidad: "Estimulacion temprana" },
+      { nombre: "Kruger y Percaz", especialidad: "Obstetricia" }
+    ]
   },
   {
     id: 3,
@@ -36,99 +37,111 @@ export const capsData = [
     ubicacion: "Barrio Pachan",
     direccion: "Chilavert 122",
     enfermera: "Susana Lay",
-    celular:"2281 - 306619",
-    calendario: {
-      lunes: { profesional: "Dr. Congiusta Gabriel - Gomez Josefina", horario: "08:00 - 12:00", especialidad: "Clinico - Psicologia" },
-      martes: {profesional: "Bellingeri Mariana", horario: "08:00 - 12:00", especialidad: "Estimulacion Temprana"},
-      miercoles: { profesional: "Dr. Congiusta Gabriel - Gomez Josefina - Cabral Melina", horario: "08:00 - 12:00", especialidad: "Clinico - Psicologia - Obstetricia" },
-      jueves: { profesional: "Johnston Maria", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      viernes: { profesional: "Dr. Congiusta Gabriel - Dr. Mendez Gustavo", horario: "08:00 - 12:00", especialidad: "Clinico - Pediatra" }
-    }
+    celular: "2281 - 306619",
+    profesionales: [
+      { nombre: "Dr. Congiusta Gabriel", especialidad: "Clinico" },
+      { nombre: "Gomez Josefina", especialidad: "Psicologia" },
+      { nombre: "Bellingeri Mariana", especialidad: "Estimulacion Temprana" },
+      { nombre: "Cabral Melina", especialidad: "Obstetricia" },
+      { nombre: "Dra. Johnston Maria", especialidad: "Nutricionista" },
+      { nombre:"Mendez Gustavo", especialidad: "Pediatria"}
+    ]
   },
   {
     id: 4,
     nombre: "CECILIA GRIERSON",
-    ubicacion: "Barrio Belen",
-    direccion: "Guemes 268",
-    enfermera: "Dora Lopez",
-    celular:"2281 - 358346",
-    calendario: {
-      lunes: { profesional: "--", horario: "--", especialidad: "--" },
-      martes: {profesional: "--", horario: "--", especialidad: "--"},
-      miercoles: { profesional: "Figueroa Paz", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      jueves: { profesional: "Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Psicologia" },
-      viernes: { profesional: "--", horario: "08:00 - 12:00", especialidad: "--" }
-    }
-  }, 
+    ubicacion:"Barrio Belen",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
+  },
   {
     id: 5,
-    nombre: "TEDIN",
-    ubicacion: "Barrio Belen",
-    direccion: "Guemes 268",
-    enfermera: "Dora Lopez",
-    calendario: {
-      lunes: { profesional: "--", horario: "--", especialidad: "--" },
-      martes: {profesional: "--", horario: "--", especialidad: "--"},
-      miercoles: { profesional: "Figueroa Paz", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      jueves: { profesional: "Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Psicologia" },
-      viernes: { profesional: "--", horario: "08:00 - 12:00", especialidad: "--" }
-    }
+    nombre: "PEDRO PIZÁ",
+    ubicacion:"Barker",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
   },
   {
     id: 6,
-    nombre: "LOPEZ",
-    ubicacion: "Barrio Belen",
-    direccion: "Guemes 268",
-    enfermera: "Dora Lopez",
-    calendario: {
-      lunes: { profesional: "--", horario: "--", especialidad: "--" },
-      martes: {profesional: "--", horario: "--", especialidad: "--"},
-      miercoles: { profesional: "Figueroa Paz", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      jueves: { profesional: "Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Psicologia" },
-      viernes: { profesional: "--", horario: "08:00 - 12:00", especialidad: "--" }
-    }
+    nombre: "FELIPE ANUNCIBAY",
+    ubicacion:"Villa Cacique",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
   },
   {
     id: 7,
-    nombre: "BARKER",
-    ubicacion: "Barrio Belen",
-    direccion: "Guemes 268",
-    enfermera: "Dora Lopez",
-    calendario: {
-      lunes: { profesional: "--", horario: "--", especialidad: "--" },
-      martes: {profesional: "--", horario: "--", especialidad: "--"},
-      miercoles: { profesional: "Figueroa Paz", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      jueves: { profesional: "Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Psicologia" },
-      viernes: { profesional: "--", horario: "08:00 - 12:00", especialidad: "--" }
-    }
+    nombre: "CECILIA GRIERSON",
+    ubicacion:"Tedin",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
   },
   {
     id: 8,
-    nombre: "VILLA CACIQUE",
-    ubicacion: "Barrio Belen",
-    direccion: "Guemes 268",
-    enfermera: "Dora Lopez",
-    calendario: {
-      lunes: { profesional: "--", horario: "--", especialidad: "--" },
-      martes: {profesional: "--", horario: "--", especialidad: "--"},
-      miercoles: { profesional: "Figueroa Paz", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      jueves: { profesional: "Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Psicologia" },
-      viernes: { profesional: "--", horario: "08:00 - 12:00", especialidad: "--" }
-    }
+    nombre: "CECILIA GRIERSON",
+    ubicacion:"Lopez",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
   },
   {
     id: 9,
-    nombre: "EL LUCHADOR",
-    ubicacion: "Barrio Belen",
-    direccion: "Guemes 268",
-    enfermera: "Dora Lopez",
-    calendario: {
-      lunes: { profesional: "--", horario: "--", especialidad: "--" },
-      martes: {profesional: "--", horario: "--", especialidad: "--"},
-      miercoles: { profesional: "Figueroa Paz", horario: "08:00 - 12:00", especialidad: "Nutricionista" },
-      jueves: { profesional: "Santangelo Maria", horario: "08:00 - 12:00", especialidad: "Psicologia" },
-      viernes: { profesional: "--", horario: "08:00 - 12:00", especialidad: "--" }
-    }
+    nombre: "CECILIA GRIERSON",
+    ubicacion:"El Luchador",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
   },
+  {
+    id: 10,
+    nombre: "CECILIA GRIERSON",
+    ubicacion:"Crl. Rodolfo Bunge",
+    direccion: "Guames 268",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
+  },
+  {
+    id: 11,
+    nombre: "RIGANTI",
+    ubicacion:"Centrico",
+    direccion: "Zibecchi 74",
+    enfermera: "Dora Noguez",
+    celular: "2281 - 358346",
+    profesionales: [
+      { nombre: "Lic. Figueroa Paz", especialidad: "Nutricionista" },
+      { nombre: "Santangelo Maria", especialidad: "Psicologia" },
+    ]
+  }
   // Agregar más CAPS aquí...
 ];

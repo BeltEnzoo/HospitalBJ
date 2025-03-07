@@ -78,7 +78,7 @@ export const Title = styled.h3`
 
 export const TitleLink = styled.a`
   text-decoration: none;
-  color: #e74c3c;
+  color: black;
   font-weight: bold;
   transition: color 0.3s ease;
 

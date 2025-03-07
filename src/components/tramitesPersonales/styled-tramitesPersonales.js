@@ -14,7 +14,7 @@ export const TitleTramitesPersonales = styled.h1`
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 3px solid  #007bb5;
+  border-bottom: 3px solid #007bb5;
   padding-bottom: 10px;
   margin-bottom: 20px;
 
@@ -55,11 +55,9 @@ export const CardTramitesPersonales = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 90px;
-  height: 180px
-  /* border-radius:50%; */
+  width: 120px; /* Se aumentó el tamaño */
+  height: 240px; /* Se aumentó el tamaño */
   margin-bottom: 15px;
-  /* border: 4px solid  #007bb5; */
   transition: transform 0.3s ease;
 
   ${CardTramitesPersonales}:hover & {
@@ -75,12 +73,33 @@ export const Title = styled.h3`
 
 export const TitleLink = styled.a`
   text-decoration: none;
-  color: #e61c1c;
+  color:black;
   font-weight: bold;
   transition: color 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     color: #b31212;
     text-decoration: underline;
+  }
+`;
+
+export const CalendarContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Se aumentó el espacio entre imágenes */
+  margin-top: 20px;
+  width: auto;
+  justify-content: center;
+
+  img {
+    width: 400px; /* Aumento en el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); /* Mayor efecto de escala al pasar el cursor */
+    }
   }
 `;

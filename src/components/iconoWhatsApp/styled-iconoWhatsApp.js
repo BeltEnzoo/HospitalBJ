@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export const FloatingButton = styled.a`
   position: fixed;
   bottom: 20px;
