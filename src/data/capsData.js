@@ -103,7 +103,7 @@ export const capsData = [
   },
   {
     id: 7,
-    nombre: "CECILIA GRIERSON",
+    nombre: "",
     ubicacion:"Tedin",
     direccion: "Guames 268",
     enfermera: "Dora Noguez",
@@ -115,7 +115,7 @@ export const capsData = [
   },
   {
     id: 8,
-    nombre: "CECILIA GRIERSON",
+    nombre: "",
     ubicacion:"Lopez",
     direccion: "Guames 268",
     enfermera: "Dora Noguez",
@@ -127,7 +127,7 @@ export const capsData = [
   },
   {
     id: 9,
-    nombre: "CECILIA GRIERSON",
+    nombre: "",
     ubicacion:"El Luchador",
     direccion: "Guames 268",
     enfermera: "Dora Noguez",
