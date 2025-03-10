@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { newsData } from '../data/newsData';
-import { NewsWrapper, Title, Image, ContentWrapper } from './NewsDetail'; // Importamos los estilos
+import { NewsWrapper, Title, Image, ContentWrapper } from './NewsDetail-styled'; // Importamos los estilos
 
 const NewsDetail = () => {
   const { id } = useParams();

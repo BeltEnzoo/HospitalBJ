@@ -15,7 +15,7 @@ export const autoridades = [
     id: 3,
     cargo: "SUB DIR. MED",
     nombre: "Lic. Sandra Penido",
-    imagen: "",
+    imagen: "public/img/sandrapenido.jpg",
   },
   {
     id: 4,
