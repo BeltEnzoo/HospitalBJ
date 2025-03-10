@@ -40,7 +40,7 @@ const Contacto = () => {
     <Container>
       <h1>Contacto</h1>
       <p><strong>Dirección:</strong> Labriola 272, Benito Juarez</p>
-      <p><strong>Teléfono:</strong> +54 2281 - xxxxxx</p>
+      <p><strong>Teléfono:</strong> 2292 - 451370 </p>
       <p><strong>Email:</strong> administracion@hospital.com</p>
 
       <h2>Envíanos un mensaje</h2>
