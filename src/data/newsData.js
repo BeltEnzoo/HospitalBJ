@@ -1,10 +1,19 @@
 export const newsData = [
   {
-    id: 1,
-    title: "Nueva ambulancia",
-    image: "https://tse4.mm.bing.net/th?id=OIP.x-ane-1cEUEedoC7UtZR5QHaEG&pid=Api&P=0&h=180",
-    description: "Se incorporó nueva tecnología para mejorar la atención médica.",
-    content: "El hospital ha adquirido una nueva ambulancia equipada con tecnología avanzada para ofrecer atención médica de alta calidad en situaciones de emergencia. Con esta incorporación, el hospital espera reducir los tiempos de respuesta y mejorar la atención a los pacientes. La ambulancia cuenta con los más altos estándares de equipamiento y personal capacitado para cualquier emergencia."
+    id: 6,
+    title: "Nueva Pagina Web del Hospital",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOk4RqINq-gpYZ8u-bf6xHGjB8U-KtFMkvlQ&s", // Reemplaza con la imagen que desees
+    description: "Lanzamos nuestra nueva página web para mejorar la experiencia de nuestros pacientes y la comunidad.",
+    content: `
+      <h3>Bienvenidos al Nuevo Portal Web del Hospital</h3>
+      <p>Nos complace anunciar el lanzamiento de nuestra nueva página web, una plataforma moderna, accesible y fácil de navegar, pensada para ofrecerles toda la información que necesitan sobre nuestros servicios, profesionales y noticias importantes del hospital.</p>
+      
+      <h4>Mejorando la experiencia para todos</h4>
+      <p>Desde el Hospital, estamos comprometidos con brindarles un servicio de calidad. Con el objetivo de mejorar la experiencia de nuestros pacientes y la comunidad, lanzamos este nuevo sitio web donde podrán acceder a información actualizada, conocer nuestros servicios y mantenerse al tanto de las últimas noticias relacionadas con la salud.</p>
+      
+      <h4>Explora, descubre y comparte</h4>
+      <p>Invitamos a todos nuestros visitantes a explorar cada sección, encontrar lo que necesitan y, si lo desean, compartir sus experiencias y sugerencias para seguir mejorando. ¡Gracias por acompañarnos en este nuevo camino digital! Les damos la bienvenida a nuestra nueva casa virtual.</p>
+    `
   },
   {
     id: 2,

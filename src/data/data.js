@@ -3,13 +3,13 @@ export const data = [
       id: 1,
       imagen: '/img/atencion_telefonica.jpg',
       descripcion: 'Atencion telefonica',
-      cel: '2292-4513',
+      cel: '2292-451370',
     },
     {
       id: 2,
       imagen: '/img/central_de_turnos.png',
       descripcion: 'Central de turnos',
-      cel: '+1 987 654 321',
+      cel: '2292 - 451370 - INT',
     },
     {
       id: 3,
